@@ -1,0 +1,47 @@
+<div class="d-flex justify-content-center">
+
+    <div class="card mt-3 text-dark text-center" style="width: 500px;">
+       
+        <div class="card-header">
+            <h1>Login</h1>
+        </div>
+
+        <div class="card-body">
+
+            {{status}}
+
+            <form method="post">
+
+                <div class="form-group">
+
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="form-control" placeholder="email@teste.com" required autofocus>
+
+                </div>
+
+                <div class="form-group my-3">
+
+                    <label>Senha</label>
+                    <input type="password" name="senha" class="form-control" placeholder="********" required>
+
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <a href="{{URL}}/">
+                            <button type="button" class="btn btn-lg btn-light">Voltar</button>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <button type="submit" class="btn btn-lg btn-danger">Entrar</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

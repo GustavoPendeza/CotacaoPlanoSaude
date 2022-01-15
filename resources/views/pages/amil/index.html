@@ -1,0 +1,131 @@
+<h1>{{title}}</h1>
+
+<hr>
+
+<a href="{{URL}}/admin/precos">
+    <button type="button" class="btn btn-light">Voltar</button>
+</a>
+
+<hr>
+
+{{status}}
+
+<form method="post">
+
+    <div class="form-group my-3">
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <!-----------------------------ID PLANO--------------------------------------------->
+                    <select name="idprecos" class="form-select my-1" id="floatingPlano" required>
+                        <option>Selecione um plano</option>
+                        {{precos}}
+                    </select>
+                    <label for="floatingPlano" class="text-dark">Plano*</label>
+                
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <!-------------------------------------------FAIXAS ETÁRIAS--------------------------------------------->
+
+    <fieldset>
+        <legend>Faixas Etárias:</legend>
+        
+        <div class="form-group my-3">
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec0018" class="form-control" id="pec0018" placeholder="De 00 a 18 anos" required>
+                        <label for="pec0018" class="text-dark">De 00 a 18 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec1923" class="form-control" id="pec1923" placeholder="De 19 a 23 anos" required>
+                        <label for="pec1923" class="text-dark">De 19 a 23 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec2428" class="form-control" id="pec2428" placeholder="De 24 a 28 anos" required>
+                        <label for="pec2428" class="text-dark">De 24 a 28 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec2933" class="form-control" id="pec2933" placeholder="De 29 a 33 anos" required>
+                        <label for="pec2933" class="text-dark">De 29 a 33 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec3438" class="form-control" id="pec3438" placeholder="De 34 a 38 anos" required>
+                        <label for="pec3438" class="text-dark">De 34 a 38 anos*</label>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group my-3">
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec3943" class="form-control" id="pec3943" placeholder="De 39 a 43 anos" required>
+                        <label for="pec3943" class="text-dark">De 39 a 43 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec4448" class="form-control" id="pec4448" placeholder="De 44 a 48 anos" required>
+                        <label for="pec4448" class="text-dark">De 44 a 48 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec4953" class="form-control" id="pec4953" placeholder="De 49 a 53 anos" required>
+                        <label for="pec4953" class="text-dark">De 49 a 53 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec5458" class="form-control" id="pec5458" placeholder="De 54 a 58 anos" required>
+                        <label for="pec5458" class="text-dark">De 54 a 58 anos*</label>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+
+                        <input type="number" min="0" name="pec59m" class="form-control" id="pec59m" placeholder="De 59 ou + anos" required>
+                        <label for="pec59m" class="text-dark">De 59 ou + anos*</label>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="form-group my-3">
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </div>
+
+</form>

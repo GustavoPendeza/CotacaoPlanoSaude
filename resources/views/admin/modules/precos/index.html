@@ -1,0 +1,28 @@
+<h1>Preços de Planos de Saúde</h1>
+
+<hr>
+
+<a href="{{URL}}/admin/precos/new">
+    <button type="button" class="btn btn-success">Cadastrar preços de plano</button>
+</a>
+
+<hr>
+
+{{status}}
+
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Empresa</th>
+            <th>Plano</th>
+            <th>Tipo de Plano</th>
+            <th style="width: 200px" colspan="3">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{itens}}
+    </tbody>
+</table>
+
+{{pagination}}
